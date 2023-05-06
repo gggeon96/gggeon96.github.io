@@ -1,11 +1,10 @@
-title: Jekyll Serial Programmer
+title: takoyakisoba
 markdown: kramdown
 
 # for atom feed
 author:
-  name: Sharad Raj Singh Maurya
-  email: dev_sharad@outlook.com
-
+  name: GeonHyeon Kim
+  email: geon1120@gmail.com
 plugins:
   - jemoji
   - jekyll-seo-tag
