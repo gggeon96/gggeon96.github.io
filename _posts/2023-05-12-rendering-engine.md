@@ -8,9 +8,12 @@ published: true
 ---
 
 # 그림으로 보는 브라우저의 동작, 구성요소
-<img src="C:\Users\geon1\Desktop\gggeon96.github.io\assets\images\2023-05-12-렌더링엔진\rendering.png" alt="rendering" style="zoom:50%;" />
 
-<img src="C:\Users\geon1\Desktop\gggeon96.github.io\assets\images\2023-05-12-렌더링엔진\rendering-2.png" alt="rendering-2" style="zoom:80%;" />
+<img src="./assets/images/2023-05-12-rendering-engine/rendering.png" alt="rendering" style="zoom:80%;" />
+
+<img src="./assets/images/2023-05-12-rendering-engine/rendering-2.png" alt="rendering-2" style="zoom:80%;" />
+
+
 
 렌더링 엔진 & js 엔진
 
@@ -26,11 +29,11 @@ published: true
 
 # 렌더링 엔진 종류 및 특징
 
-<img src="C:\Users\geon1\Desktop\gggeon96.github.io\assets\images\2023-05-12-렌더링엔진\rendering-engines.png" alt="rendering-engines" style="zoom:75%;" />
+![rendering-engines](./assets/images/2023-05-12-rendering-engine/rendering-engines.png)
 
 ## **WebKit 엔진**
 
-![rendering-webkit](C:\Users\geon1\Desktop\gggeon96.github.io\assets\images\2023-05-12-렌더링엔진\rendering-webkit.png)
+![rendering-webkit](./assets/images/2023-05-12-rendering-engine/rendering-webkit.png)
 
 **1)** DOM tree 생성 : Conversion - Tokenizing - Lexing 이후에 DOM 생성
 
@@ -44,7 +47,7 @@ WebKit 엔진은 오픈소스 웹 브라우저로 Safari 그리고 과거의 Chr
 
 ## **GecKo 엔진**
 
-![rendering-gecko](C:\Users\geon1\Desktop\gggeon96.github.io\assets\images\2023-05-12-렌더링엔진\rendering-gecko.png)
+![rendering-gecko](./assets/images/2023-05-12-rendering-engine/rendering-gecko.png)
 
 **1)** Content Sink에서 DOM 노드를 만들어 Content Model 생성
 
@@ -58,7 +61,7 @@ WebKit 엔진은 오픈소스 웹 브라우저로 Safari 그리고 과거의 Chr
 
 ## **Blink 엔진**
 
-![rendering-blink](C:\Users\geon1\Desktop\gggeon96.github.io\assets\images\2023-05-12-렌더링엔진\rendering-blink.png)
+![rendering-blink](./assets/images/2023-05-12-rendering-engine/rendering-blink.png)
 
 Blink 엔진은 Webkit 엔진이 포킹된 것으로 브라우저는 선택된 자원을 화면에 표시해주고 여러 개의 WebContents를 포함하고 있다. 멀티 프로세스 애플리케이션의 한 부분으로 사용하도록 최적화 되어 있다고 한다.
 
@@ -66,9 +69,9 @@ Blink 엔진은 Webkit 엔진이 포킹된 것으로 브라우저는 선택된 �
 
 # 렌더링 엔진의 동작 과정
 
-## DOM트리 구축, CSSOM 트리 구축 단계
+![rendering-step](./assets/images/2023-05-12-rendering-engine/rendering-step.png)
 
-![rendering-step](C:\Users\geon1\Desktop\gggeon96.github.io\assets\images\2023-05-12-렌더링엔진\rendering-step.png)
+## DOM트리 구축, CSSOM 트리 구축 단계
 
 DOM(Document Object Model), CSSOM(Css Object MOdel)의 약자임!
 
@@ -80,7 +83,7 @@ DOM은 HTML을 파싱해서 만든 모델이다. 이 DOM노드들을 병합해�
 
 ### HTML파싱과 DOM생성
 
-![rendering-parsing](C:\Users\geon1\Desktop\gggeon96.github.io\assets\images\2023-05-12-렌더링엔진\rendering-parsing.png)
+![rendering-parsing](./assets/images/2023-05-12-rendering-engine/rendering-parsing.png)
 
 1.  서버는 브라우저로부터 요청 받은 HTML 파일을 읽고 → 메모리에 저장하고 → 그 메모리에 저장된 바이트`(101101000100…)`를 응답한다.
 2.  브라우저는 응답 받은 바이트 형태의 문서를 meta태그의 charset attribute에 지정된 인코딩방식(UTF-8)에 따라 문자열로 반환한다.
@@ -115,7 +118,7 @@ script 태그의 src에 정의된 자바스크립트 파일을 서버에 요청�
 
 ## 렌더 트리 구축
 
-![rendering-tree](C:\Users\geon1\Desktop\gggeon96.github.io\assets\images\2023-05-12-렌더링엔진\rendering-tree.png)
+![rendering-tree](./assets/images/2023-05-12-rendering-engine/rendering-tree.png)
 
 CSSOM 트리와 DOM 트리를 결합하여, 표시해야 할 순서로 내용을 그려낼 수 있도록 하기 위해
 
