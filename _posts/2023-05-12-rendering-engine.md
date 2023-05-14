@@ -9,31 +9,29 @@ published: true
 
 # 그림으로 보는 브라우저의 동작, 구성요소
 
-<img src="./assets/images/2023-05-12-rendering-engine/rendering.png" alt="rendering" style="zoom:80%;" />
+![rendering](/assets/images/2023-05-12-rendering-engine/rendering.png)
 
-<img src="./assets/images/2023-05-12-rendering-engine/rendering-2.png" alt="rendering-2" style="zoom:80%;" />
-
-
+![rendering-2](/assets/images/2023-05-12-rendering-engine/rendering-2.png)
 
 렌더링 엔진 & js 엔진
 
-| UserInterface                                                | \- 사용자가 접근할 수 있는 영역이다. - 예를 들어, 검색창, 뒤로가기/앞으로가기 버튼, 새로 고침 버튼 등 브라우저 프로그램 자체의 GUI를 구성하는 부분이다. |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| BrowserEngine                                                | \- User Interface와 Rendering Engine 사이의 동작을 제어해주는 엔진이다. - 브라우저라는 프로그램의 비즈니스 로직, 핵심 중추 부분이다. - Data Storage를 참조하며 로컬에 데이터를 쓰고 읽으면서 다양한 작업을 한다. |
-| Rendering Engine                                             | \- 요청한 콘텐츠를 화면에 출력하는 역할이다.                 |
-| \- HTML, CSS 등을 파싱하여 최종적으로 화면에 그린다. ←오늘 볼 곳 |                                                              |
-| Networking                                                   | \- http 요청을 할 수 있으며 네티워크를 호출할 수 있다.       |
-| JS Engine                                                    | \- javascript 코드를 해석하고 실행한다.                      |
-| UI Backend                                                   | \- 기본적인 위젯을 그리는 인터페이스이다.                    |
-| Data Storage                                                 | \- Local Storage, Indexed DB, 쿠키 등 브라우저 메모리를 활용하여 저장하는 영역이다. |
+| UserInterface                                                    | \- 사용자가 접근할 수 있는 영역이다. - 예를 들어, 검색창, 뒤로가기/앞으로가기 버튼, 새로 고침 버튼 등 브라우저 프로그램 자체의 GUI를 구성하는 부분이다.                                                          |
+| ---------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BrowserEngine                                                    | \- User Interface와 Rendering Engine 사이의 동작을 제어해주는 엔진이다. - 브라우저라는 프로그램의 비즈니스 로직, 핵심 중추 부분이다. - Data Storage를 참조하며 로컬에 데이터를 쓰고 읽으면서 다양한 작업을 한다. |
+| Rendering Engine                                                 | \- 요청한 콘텐츠를 화면에 출력하는 역할이다.                                                                                                                                                                     |
+| \- HTML, CSS 등을 파싱하여 최종적으로 화면에 그린다. ←오늘 볼 곳 |                                                                                                                                                                                                                  |
+| Networking                                                       | \- http 요청을 할 수 있으며 네티워크를 호출할 수 있다.                                                                                                                                                           |
+| JS Engine                                                        | \- javascript 코드를 해석하고 실행한다.                                                                                                                                                                          |
+| UI Backend                                                       | \- 기본적인 위젯을 그리는 인터페이스이다.                                                                                                                                                                        |
+| Data Storage                                                     | \- Local Storage, Indexed DB, 쿠키 등 브라우저 메모리를 활용하여 저장하는 영역이다.                                                                                                                              |
 
 # 렌더링 엔진 종류 및 특징
 
-![rendering-engines](./assets/images/2023-05-12-rendering-engine/rendering-engines.png)
+![rendering-engines](/assets/images/2023-05-12-rendering-engine/rendering-engines.png)
 
 ## **WebKit 엔진**
 
-![rendering-webkit](./assets/images/2023-05-12-rendering-engine/rendering-webkit.png)
+![rendering-webkit](/assets/images/2023-05-12-rendering-engine/rendering-webkit.png)
 
 **1)** DOM tree 생성 : Conversion - Tokenizing - Lexing 이후에 DOM 생성
 
@@ -47,7 +45,7 @@ WebKit 엔진은 오픈소스 웹 브라우저로 Safari 그리고 과거의 Chr
 
 ## **GecKo 엔진**
 
-![rendering-gecko](./assets/images/2023-05-12-rendering-engine/rendering-gecko.png)
+![rendering-gecko](/assets/images/2023-05-12-rendering-engine/rendering-gecko.png)
 
 **1)** Content Sink에서 DOM 노드를 만들어 Content Model 생성
 
@@ -61,7 +59,7 @@ WebKit 엔진은 오픈소스 웹 브라우저로 Safari 그리고 과거의 Chr
 
 ## **Blink 엔진**
 
-![rendering-blink](./assets/images/2023-05-12-rendering-engine/rendering-blink.png)
+![rendering-blink](/assets/images/2023-05-12-rendering-engine/rendering-blink.png)
 
 Blink 엔진은 Webkit 엔진이 포킹된 것으로 브라우저는 선택된 자원을 화면에 표시해주고 여러 개의 WebContents를 포함하고 있다. 멀티 프로세스 애플리케이션의 한 부분으로 사용하도록 최적화 되어 있다고 한다.
 
@@ -69,7 +67,7 @@ Blink 엔진은 Webkit 엔진이 포킹된 것으로 브라우저는 선택된 �
 
 # 렌더링 엔진의 동작 과정
 
-![rendering-step](./assets/images/2023-05-12-rendering-engine/rendering-step.png)
+![rendering-step](/assets/images/2023-05-12-rendering-engine/rendering-step.png)
 
 ## DOM트리 구축, CSSOM 트리 구축 단계
 
@@ -83,7 +81,7 @@ DOM은 HTML을 파싱해서 만든 모델이다. 이 DOM노드들을 병합해�
 
 ### HTML파싱과 DOM생성
 
-![rendering-parsing](./assets/images/2023-05-12-rendering-engine/rendering-parsing.png)
+![rendering-parsing](/assets/images/2023-05-12-rendering-engine/rendering-parsing.png)
 
 1.  서버는 브라우저로부터 요청 받은 HTML 파일을 읽고 → 메모리에 저장하고 → 그 메모리에 저장된 바이트`(101101000100…)`를 응답한다.
 2.  브라우저는 응답 받은 바이트 형태의 문서를 meta태그의 charset attribute에 지정된 인코딩방식(UTF-8)에 따라 문자열로 반환한다.
@@ -118,7 +116,7 @@ script 태그의 src에 정의된 자바스크립트 파일을 서버에 요청�
 
 ## 렌더 트리 구축
 
-![rendering-tree](./assets/images/2023-05-12-rendering-engine/rendering-tree.png)
+![rendering-tree](/assets/images/2023-05-12-rendering-engine/rendering-tree.png)
 
 CSSOM 트리와 DOM 트리를 결합하여, 표시해야 할 순서로 내용을 그려낼 수 있도록 하기 위해
 
