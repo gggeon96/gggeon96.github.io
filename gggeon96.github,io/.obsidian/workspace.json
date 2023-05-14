@@ -1,22 +1,18 @@
 {
   "main": {
-    "id": "200efe720a24f6c3",
+    "id": "2ea6d9844f78e54e",
     "type": "split",
     "children": [
       {
-        "id": "4864b422a1dfcd3e",
+        "id": "fea333b5f90a3cd8",
         "type": "tabs",
         "children": [
           {
-            "id": "84f40fa0d8e0db53",
+            "id": "eb45b36ac81cfbce",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2023-05-12-렌더링엔진.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -25,15 +21,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "e770e0a5fbf0123a",
+    "id": "ba78a71d5ada8cc1",
     "type": "split",
     "children": [
       {
-        "id": "6d854f6b97c4789f",
+        "id": "50601471f85aceb9",
         "type": "tabs",
         "children": [
           {
-            "id": "4ee2a24621bd4ca7",
+            "id": "28701048e919b6db",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,7 +39,7 @@
             }
           },
           {
-            "id": "526f66bb2029cd36",
+            "id": "57dfbbfb6176a9f2",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -58,7 +54,7 @@
             }
           },
           {
-            "id": "370d07ea5a0506c2",
+            "id": "9bc541d4f9b46024",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -72,20 +68,19 @@
     "width": 300
   },
   "right": {
-    "id": "172ef2a4effa7968",
+    "id": "cc95730a13d7ff7a",
     "type": "split",
     "children": [
       {
-        "id": "b9306b5daed6b74d",
+        "id": "27acc36d47d276cd",
         "type": "tabs",
         "children": [
           {
-            "id": "1f75053cf2aaabc6",
+            "id": "111a8a6f36684f6a",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023-05-12-렌더링엔진.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,19 +92,18 @@
             }
           },
           {
-            "id": "fa3333cc27436662",
+            "id": "2454509a8f7ed022",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2023-05-12-렌더링엔진.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "9c7df0c7825f6093",
+            "id": "5fec8084731a793e",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -120,13 +114,11 @@
             }
           },
           {
-            "id": "2fe19e24f39aadaa",
+            "id": "0151417dc9d548d3",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "2023-05-12-렌더링엔진.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -143,22 +135,9 @@
       "canvas:새 캔버스 만들기": false,
       "daily-notes:오늘의 데일리 노트 열기": false,
       "templates:템플릿 삽입": false,
-      "command-palette:명령어 팔레트 열기": false,
-      "terminal:Open terminal": false
+      "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "4ee2a24621bd4ca7",
-  "lastOpenFiles": [
-    "assets/images/2023-05-12-렌더링엔진/rendering-1684067111128-2.png",
-    "assets/images/2023-05-12-렌더링엔진/rendering.png",
-    "assets/images/2023-05-12-렌더링엔진",
-    "assets/images",
-    "assets",
-    "rendering.png",
-    "2023-05-12-렌더링엔진.md",
-    "2023-05-11-FCM.md",
-    "[.md",
-    "2023-05-11-FCM topic기반 push notification.md",
-    "2015-02-28-test-markdown.md"
-  ]
+  "active": "eb45b36ac81cfbce",
+  "lastOpenFiles": []
 }
